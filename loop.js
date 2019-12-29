@@ -1,4 +1,4 @@
-//1.  number from 0-10
+//1. geive number from 0-10
 for (let i = 0; i <= 10; i++) {
     console.log(i);
 };
@@ -9,7 +9,7 @@ console.log(i);
 i++;
 };
 
-//2. even number from 100 to 2
+//2.give even number from 100 to 2
 for (let i = 100; i >= 2; i-=2) {
     console.log(i);
 };
@@ -49,7 +49,7 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(sum);
 
-//4. Given all numbers > 10 in array
+//4. Give all numbers > 10 in array
 function greaterThanTen(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -61,8 +61,13 @@ function greaterThanTen(arr) {
 }
 greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 
-//5. Given all number divided 3 from 10 000
+//5. Give all number divided 3 from 10 000
 for (let x = 3; x < 10000; x = x*3) {
   console.log(x);
 };
 
+//6. Give several times needed elem (give 5 times 'Hello')
+let timesToSayHello = 5;
+for (let i = 0; i < timesToSayHello; i++) {
+ console.log("Hello!");
+}
