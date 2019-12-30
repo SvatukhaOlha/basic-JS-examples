@@ -34,6 +34,16 @@ while (i >= 2) {
     i = i - 2;
 };
 
+//2.1 give even number from 10-2
+for (let i = 10; i > 0; i-=2) {
+  console.log(i);
+}
+
+//2.2 give odd number from 9-1
+for (let i = 9; i > 0; i-=2) {
+  console.log(i);
+}
+
 //3.Ask enter your age
 let age = NaN;
 while (isNaN(age) || age === 0) {
@@ -49,7 +59,19 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(sum);
 
-//4. Give all numbers > 10 in array
+//4.1 sum all elem in multi-dimensional array
+function sumAll(arr) {
+  let product = 0;
+  for(let i = 0; i<arr.length; i++) {
+    for(let j =0; j < arr[i].length; j++) {
+      product+=arr[i][j];
+    }
+  }
+  return product;
+}
+console.log(sumAll([[1,1],[1,1],[1,1,1]])); //return 7
+
+//5. Give all numbers > 10 in array
 function greaterThanTen(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
