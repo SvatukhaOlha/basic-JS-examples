@@ -42,3 +42,21 @@ console.log(secondInAYear);
 let age = 24;
 ageSeconds = 24 * secondInAYear;
 
+//4. Create clock
+function printTime() {
+  const clock = new Date();
+  const hours = clock.getHours();
+  const mins = clock.getMinutes();
+  const secs = clock.getSeconds();
+  document.body.innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+
+//5. rewrite str to array / [ 'W', 'o', 'r', 'l', 'd' ]
+(function() {
+	let greet = 'Hello World';
+	let toGreet = [].filter.call(greet, function(element, index) {
+		return index > 5;
+	});
+	console.log(toGreet);
+}());
