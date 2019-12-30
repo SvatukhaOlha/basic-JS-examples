@@ -43,3 +43,15 @@ firstCharacter = lowerString[0];
 firstCharacterUpper = firstCharacter.toUpperCase();
 restOfString = lowerString.slice(1);
 console.log(firstCharacterUpper + restOfString);
+
+//7. delete - delete properties from objects
+delete myObj.prop;
+
+//8 .hasOwnProperty() - to check if the property of a given object exists or not
+.hasOwnProperty(propname)
+let myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");    // true
+myObj.hasOwnProperty("middle"); // false
