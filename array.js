@@ -19,13 +19,25 @@ function printElement(element) {
     console.log(element);
 };
 
-//4. Add all nums in array
+//4. sum all nums in array
 const nums = [1, 5, 20, 42, 4, 6, 10];
 let sum = 0;
 for (let i = 0; i < nums.length; i++) {
     sum = sum + nums[i];
 }
-console.log(sum);
+console.log(sum); //return 88
+
+//4.1 sum all elem in multi-dimensional array
+function sumAll(arr) {
+  let product = 0;
+  for(let i = 0; i<arr.length; i++) {
+    for(let j =0; j < arr[i].length; j++) {
+      product+=arr[i][j];
+    }
+  }
+  return product;
+}
+console.log(sumAll([[1,1],[1,1],[1,1,1]])); //return 7
 
 
 //5. Takes each elem to str  
@@ -37,4 +49,13 @@ for (let i = 0; i < animals.length; i++) {
 In this zoo are flamingo.
 In this zoo are bear.
 In this zoo are snake.*/
+
+//6. rewrite str to array / [ 'W', 'o', 'r', 'l', 'd' ]
+(function() {
+	let greet = 'Hello World';
+	let toGreet = [].filter.call(greet, function(element, index) {
+		return index > 5;
+	});
+	console.log(toGreet);
+}());
 
