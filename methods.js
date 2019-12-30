@@ -55,3 +55,34 @@ let myObj = {
 };
 myObj.hasOwnProperty("top");    // true
 myObj.hasOwnProperty("middle"); // false
+
+//9.concat() method allows you to join arrays and create an entirely new array
+let c1 = ["HTML", "CSS"];
+let c2 = ["JS", "C++"];
+let courses = c1.concat(c2); //[HTML, CSS, JS, C++]
+
+//10. Math() -contains a number of methods that are used for calculations:
+//10.1 Math.sqrt -calculate the square root of a number
+let number = Math.sqrt(4); 
+document.write(number);//Outputs 2
+//10.2 Math.random() -To get a random number
+
+//11. setInterval()-calls a function or evaluates an expression at specified intervals (in milliseconds)
+function myAlert() {
+   alert("Hi");
+}
+setInterval(myAlert, 3000);
+
+//12. new Date()- create a new date object with the current date and time
+//Fri Jan 02 1970 00:00:00
+const d1 = new Date(86400000); 
+
+//Fri Jan 02 2015 10:42:00
+const d2 = new Date("January 2, 2015 10:42:00");
+
+//Sat Jun 11 1988 11:42:00
+const d3 = new Date(88,5,11,11,42,0,0);
+
+ //11.1 getHours()
+const d = new Date();
+const hours = d.getHours();//hours is equal to the current hour
