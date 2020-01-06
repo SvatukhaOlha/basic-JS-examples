@@ -59,3 +59,8 @@ In this zoo are snake.*/
 	console.log(toGreet);
 }());
 
+//7. Return smallest number in array 
+function findSmallestElement(arr) {
+  return arr.length !== 0 ? Math.min(...arr) : undefined;
+}
+
