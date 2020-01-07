@@ -64,3 +64,14 @@ function findSmallestElement(arr) {
   return arr.length !== 0 ? Math.min(...arr) : undefined;
 }
 
+//8. forEach method // myltiply each elem (2,4,6)
+const arr = [1, 2, 3]
+arr.forEach(m => {
+    console.log(m *2);
+});
+
+const arr2 = [1, 2, 3]
+arr2.forEach(function(el) {
+    console.log(el *2);
+})
+
