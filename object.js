@@ -12,3 +12,9 @@ let myObj = {
 };
 myObj.hasOwnProperty("top");    // true
 myObj.hasOwnProperty("middle"); // false
+
+//4. key of object //return (key, secondKey, thirdKey)
+let obj = {key: 1, secondKey: 2, thirdKey: 3};
+for (let k in obj) {
+    console.log(k)
+}
