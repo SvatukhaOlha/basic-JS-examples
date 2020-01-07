@@ -60,3 +60,20 @@ setInterval(printTime, 1000);
 	});
 	console.log(toGreet);
 }());
+
+//6. functiom editions 
+function add(a, b) {
+    let sum = a + b;
+    console.log(sum);
+}
+add(25,25);
+
+const add2 = (a, b) => {
+    let sum2 = a + b;
+    console.log(sum2);
+}
+add(25,25);
+
+const greet = x => "Welcome " + x;
+
+const x = () => console.log("Hi");
