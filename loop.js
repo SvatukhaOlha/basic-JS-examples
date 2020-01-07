@@ -93,3 +93,9 @@ let timesToSayHello = 5;
 for (let i = 0; i < timesToSayHello; i++) {
  console.log("Hello!");
 }
+
+//7. key of object //return (key, secondKey, thirdKey)
+let obj = {key: 1, secondKey: 2, thirdKey: 3};
+for (let k in obj) {
+    console.log(k)
+}
